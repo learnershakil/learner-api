@@ -13,6 +13,6 @@
 
 export default {
 	async fetch(request, env, ctx): Promise<Response> {
-		return new Response('Hello World!');
+		return Response.json({ User: 'learnershakil', Work: 'currently cooking something interesting...', Most_used_language_Today: 'Typescript', Coding_Time: '5 hrs 45 min' , Project_Working_On: { project: 'Novice Lab', Project_Status: 'In Development'} });
 	},
 } satisfies ExportedHandler<Env>;
